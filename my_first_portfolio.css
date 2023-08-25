@@ -1,9 +1,10 @@
 @import url('https://fonts.googleapis.com/css2?family=Merriweather:wght@300&display=swap');
 @import url('http://fonts.googleapis.com/css?family=Roboto:400,700,300');
+
 * {
   margin: 0;
   padding: 0;
-  /* box-sizing: border-box; */
+  box-sizing: border-box;
   background-color: #000000;
   font-family: Esteban;
 }
@@ -107,6 +108,7 @@ l {
 
 .card {
   margin-top: 0%;
+  height: 100%;
 }
 
 .card-title w {
@@ -348,12 +350,13 @@ svg#freepik_stories-devices.animated #freepik--Mobile--inject-36 {
 }
 
 .about-heading {
-  font-size: 80px;
+  font-size: 70px;
   color: #fffafa;
   padding: 0%;
+  margin-left: 3%;
   display: flex;
-  align-items: center;
-  justify-content: center;
+  align-items: left;
+  justify-content: left;
 }
 
 
@@ -361,48 +364,52 @@ svg#freepik_stories-devices.animated #freepik--Mobile--inject-36 {
 
 /* -------------------------------------------------------- Skill Part ------------------------------------------ */
 
-.skill p{
+.skill p {
   color: #f8f8f8;
+  font-size: large;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif !important;
 }
-.skill{
+
+.skill {
   display: flex;
   justify-content: center;
   margin-top: 5%;
-  margin-left: -8%;
+  margin-left: -10%;
   width: 110%;
 }
 
-.skill h1{
+.skill h1 {
   font-size: 70px;
   color: rgb(197, 63, 63);
   font-weight: 300%;
- 
+
 
 }
 
-.skill-main{
+.skill-main {
   margin-top: 6%;
   margin-left: 10%;
   height: 10%;
   width: 70%;
+
 }
 
-.skill-bar{
+.skill-bar {
   margin-bottom: 2rem;
 }
 
 
-.skill-left{
+.skill-left {
   margin-top: -5%;
 }
 
-.skill-left .skill-bar .skill-info{
+.skill-left .skill-bar .skill-info {
   display: flex;
   justify-content: space-between;
   align-items: center;
 }
 
-.skill-left .skill-bar .bar{
+.skill-left .skill-bar .bar {
   width: 100%;
   height: 10px;
   background-color: rgb(38, 50, 56);
@@ -411,83 +418,96 @@ svg#freepik_stories-devices.animated #freepik--Mobile--inject-36 {
   position: relative;
 }
 
-.skill-bar .bar span{
+.skill-bar .bar span {
   width: 50%;
   height: 100%;
   position: absolute;
   left: 0;
-  background:  rgb(197, 63, 63);
+  background: rgb(197, 63, 63);
   border-radius: 25px
 }
 
-.skill-bar .bar .html{
+.skill-bar .bar .html {
   width: 90%;
   animation: html 2s;
 }
-.skill-bar .bar .c-language{
+
+.skill-bar .bar .c-language {
   width: 75%;
   animation: c-language 3s;
 }
-.skill-bar .bar .css{
+
+.skill-bar .bar .css {
   width: 80%;
   animation: css 4s;
 }
-.skill-bar .bar .javasript{
+
+.skill-bar .bar .javasript {
   width: 70%;
   animation: javasript 5s;
 }
-@keyframes html{
-  0%{
+
+@keyframes html {
+  0% {
     width: 0%;
   }
-  100%{
+
+  100% {
     width: 90%;
   }
 }
-@keyframes c-language{
-  0%{
+
+@keyframes c-language {
+  0% {
     width: 0%;
   }
-  100%{
+
+  100% {
     width: 75%;
   }
 }
-@keyframes css{
-  0%{
+
+@keyframes css {
+  0% {
     width: 0%;
   }
-  100%{
+
+  100% {
     width: 80%;
   }
 }
-@keyframes javasript{
-  0%{
+
+@keyframes javasript {
+  0% {
     width: 0%;
   }
-  100%{
+
+  100% {
     width: 70%;
   }
 }
 
-.professional{
+.professional {
   display: grid;
   width: 45%;
   margin-top: -6%;
   margin-left: 50%;
   grid-template-columns: 1fr 1fr;
 }
-.box{
+
+.box {
   position: relative;
   margin: 10px 0;
   flex: 1 1 15rem;
 }
 
-.box .text{
+.box .text {
   text-align: center;
   color: #f8f8f8;
   font-size: 1rem;
 }
-.circle{
+
+.circle {
   width: 100%;
   height: 120px;
   display: flex;
@@ -495,20 +515,22 @@ svg#freepik_stories-devices.animated #freepik--Mobile--inject-36 {
   align-items: center;
   border: 2px solid #ffffff;
 }
-.box .text big{
+
+.box .text big {
   font: 400;
   letter-spacing: 1px;
   position: absolute;
   top: 43%;
   left: 52%;
-  transform: translate(-50% , -50%);
+  transform: translate(-50%, -50%);
 }
-.box .text small{
+
+.box .text small {
   display: block;
   font-weight: 600;
 }
 
-.circle .points{
+.circle .points {
   width: 5px;
   height: 10px;
   background-color: rgb(197, 63, 63);
@@ -518,7 +540,8 @@ svg#freepik_stories-devices.animated #freepik--Mobile--inject-36 {
   animation: glow 0.04s linear forwards;
   animation: rotateCircle 5s linear infinite;
 }
-.circle .point{
+
+.circle .point {
   width: 5px;
   height: 10px;
   background-color: #f8f8f8;
@@ -526,4 +549,59 @@ svg#freepik_stories-devices.animated #freepik--Mobile--inject-36 {
   border-radius: 3px;
   transform: rotate(calc(var(--i)*15deg))translateY(-45px);
   animation: glow 0.04s linear forwards;
+}
+
+
+/* -------------------------------------------------------- Contact Part ------------------------------------------ */
+.contact {
+  margin-left: 10%;
+  margin-top: 4%
+}
+
+#contact {
+  margin-top: -15%;
+  margin-bottom: 10%;
+  margin-left: 3%;
+}
+
+#contact h1 {
+  font-size: 70px;
+  color: rgb(197, 63, 63);
+  font-weight: 300%;
+}
+
+#contact p {
+  color: #f8f8f8;
+  font-size: large;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif !important;
+}
+
+.form-label {
+  color: #f8f8f8;
+  font-size: large;
+  margin-bottom: 1%;
+}
+
+.form-control {
+  margin-bottom: 3%;
+  background-color: rgb(165, 168, 168);
+}
+
+.form-check-label {
+  color: #f8f8f8;
+  font-size: large;
+  margin-bottom: 1%;
+}
+
+.form-check-input {
+  background-color: rgb(165, 168, 168);
+
+}
+
+.btn {
+  color: rgb(197, 63, 63);
+  background-color: rgb(165, 168, 168);
+  font-size: large;
+  font-weight: 600;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif !important;
 }
